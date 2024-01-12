@@ -1,5 +1,3 @@
-# Homework
-
 1. Change commit message: `git commit --amend`
 2. How to add all files at one time: `git add .`
 3. stack changes: `git stash -m "my stash"`

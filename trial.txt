@@ -1,3 +1,5 @@
 some changes in main
 from the feature1 and some changes 2.
 pre commit checking
+This file is in root.
+Other changes.

@@ -1,0 +1,15 @@
+Q5. Difference between --force push and --force-with-lease, You have to show the use of both, also you have to show in what scenario --force-with-lease is used?
+
+git push origin main --force, it will push the changes from our local branch to the remote forcefully, even if it has to delete other commit, the remote branch becomes fully synced with the local branch once git push --force it used.
+
+git push origin main --force-with-lease, it is a safer option compared to --force, as --force-with-lease first checks the remote for any new commits since the last pull and fetch, if it find new commits it will not push the changes.
+This makes sure that no one else has pushed something to the remote branch and prevents accidental deletion of commits.
+
+--force Scenarios:
+1. Deleting commits which are pushed mistakenly.
+2. Rebasing and Squashing can be done with --force.
+
+--force-with-lease Scenarios:
+1. Rebase: If we are rebasing commits in a branch then we cannot simply push to the remote, we have to use --force or --force-with-lease. The --force-with-lease is the safer option as it make sure that no one else has commited any changes to the branch.
+2. commit ammend: When we have pushed the commit to the remote but have to change the commit message.
+

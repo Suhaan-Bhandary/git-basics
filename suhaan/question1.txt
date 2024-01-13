@@ -1,0 +1,23 @@
+Q1. What is cherry-pick? Explain the use case of it also write steps to do it.
+
+Cherry pick is used to selectively pick a commit and bring it to the current branch. Cherry pick is useful for applying fix commit from one branch to other without taking other changes.
+Example: If we have 3 commits and only one of them is a fix then we can pick the fix commit using cherry pick and bring it to our branch.
+
+
+Steps:
+1. First get the id of the commit to be cherry picked using `git log`.
+2. Go to the branch where you want to bring the commit using `git checkout branch-name`.
+3. Now we can cherry pick it using, `git cherry-pick id`, id is from the step 1.
+
+
+Example of above step:
+
+Before cherry pick:
+main -> a - b - c - d - e 
+feat -> a - b - f - g - h
+
+If we want to bring only g from feat branch to main we can cherry pick it. First go to feat branch and get the id of g commit and then checkout to main branch and run `git cherry-pick g-id`
+
+After cherry pick:
+main -> a - b - c - d - e - g 
+feat -> a - b - f - g - h

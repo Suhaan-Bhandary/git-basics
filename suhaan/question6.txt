@@ -1,0 +1,7 @@
+Q6. How to un stage changes from the staged area. write command for it.
+
+Once the changes are in the staged area we can use the command `git restore --staged <file or pattern>` to un-stage the changes.
+
+Example:
+`git restore --staged .` will un-stage all the changes from the current directory and below.
+`git restore --staged trial.txt` will only un-stage the trial.txt file. 

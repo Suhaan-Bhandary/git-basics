@@ -2,3 +2,4 @@ Q3. How to combine two commits into one commit? For Example, you have 4 differen
 
 To combine C2 and C3 we can use squash from git rebase.
 
+

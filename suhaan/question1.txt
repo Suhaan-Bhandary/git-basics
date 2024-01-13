@@ -1,7 +1,8 @@
 Q1. What is cherry-pick? Explain the use case of it also write steps to do it.
 
-Cherry pick is used to selectively pick a commit and bring it to the current branch. Cherry pick is useful for applying fix commit from one branch to other without taking other changes.
-Example: If we have 3 commits and only one of them is a fix then we can pick the fix commit using cherry pick and bring it to our branch.
+Cherry pick is used to selectively pick a commit and bring it to the current branch. 
+Cherry pick is useful for applying commit from one branch to other without taking other changes.
+Example: If we have 3 commits and we only require one of them, then we can pick the commit using cherry pick and bring it to our branch.
 
 
 Steps:

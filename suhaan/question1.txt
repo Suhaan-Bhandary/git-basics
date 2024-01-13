@@ -21,3 +21,7 @@ If we want to bring only g from feat branch to main we can cherry pick it. First
 After cherry pick:
 main -> a - b - c - d - e - g 
 feat -> a - b - f - g - h
+
+Working Demo: 
+Cherry picked a commit from feat-number branch to the suhaan branch using the below command:
+git cherry-pick c082f8682f32d1b9220594b4e31c749c649dd57c

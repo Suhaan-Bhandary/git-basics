@@ -1,5 +1,11 @@
 Q3. How to combine two commits into one commit? For Example, you have 4 different commits C1, C2, C3, and  C4 and you to combine C2 and C3 into one single commit.
 
 To combine C2 and C3 we can use squash from git rebase.
+Command: `git rebase -i HEAD~Count`, here -i means it opens the rebase in interactive mode and Count is the number of commits we want in the rebase interactive mode.
 
+git rebase -i HEAD~3, we pull the last 3 commits.
+So C2, C3 and C4 are pulled in interactive mode.
+Now we can write s or squash in front of C3 commit and then it will be merged with the commit behind it, in our case C2.Once we exit from the interactive mode, we see a window to add a new commit message for the squashed commits.
 
+Working Demo:
+In suhaan branch created 4 commit and then merged the middle 2 using the above method.

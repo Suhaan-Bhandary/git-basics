@@ -1,0 +1,32 @@
+Q2. How to set multiple remote repositories for the same project? Explain the use case. You should have a working demo of it.
+
+To add a remote repository we can use the command `git remote add remote-name remote-url`
+
+Adding multiple remote repository:
+git remote add repo1 repo1-url
+git remote add repo2 repo2-url
+git remote add repo3 repo3-url
+
+`git remote` command can be then used to view all the remote repositories.
+
+Use Cases:
+1. In open source projects, once a repository is forked we can add a remote of the original to our forked one for pulling the upstream changes.
+
+2.We can use it to store backup and If one of the service provider is offline or crashes for sometime then we can use other provider.
+
+3. Companies can keep two repository for same project one for internal use and other for public.
+
+Working Demo:
+
+1. Adding gitlab `git remote add gitlab git@gitlab.com:suhaanbhandary1/git-basics.git`
+
+2. Viewing all remote `git remote -v`
+Output:
+gitlab	git@gitlab.com:suhaanbhandary1/git-basics.git (fetch)
+gitlab	git@gitlab.com:suhaanbhandary1/git-basics.git (push)
+origin	git@github.com:Suhaan-Bhandary/git-basics.git (fetch)
+origin	git@github.com:Suhaan-Bhandary/git-basics.git (push)
+
+3. git push gitlab suhaan
+
+Note: The push will only push the suhaan branch on gitlab and no other branch. 
